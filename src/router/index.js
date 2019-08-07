@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import ju from '@/components/ju'
 import Index from '@/components/Index'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
@@ -14,14 +14,14 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/ju',
-      name: 'ju',
-      component: ju
-    },
-    {
       path: '/Index',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/Login',
+      name: 'Login',
+      component: Login
     }
   ]
 })

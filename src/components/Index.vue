@@ -1,6 +1,130 @@
 <template>
   <div>
-
+    <div class="soubg">
+      <div class="sou">
+        <!--Begin 所在收货地区 Begin-->
+        <span class="s_city_b">
+        	<span class="fl">送货至：</span>
+            <span class="s_city">
+            	<span>四川</span>
+                <div class="s_city_bg">
+                	<div class="s_city_t"></div>
+                    <div class="s_city_c">
+                    	<h2>请选择所在的收货地区</h2>
+                        <table border="0" class="c_tab" style="width:235px; margin-top:10px;" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th>A</th>
+                            <td class="c_h"><span>安徽</span><span>澳门</span></td>
+                          </tr>
+                          <tr>
+                            <th>B</th>
+                            <td class="c_h"><span>北京</span></td>
+                          </tr>
+                          <tr>
+                            <th>C</th>
+                            <td class="c_h"><span>重庆</span></td>
+                          </tr>
+                          <tr>
+                            <th>F</th>
+                            <td class="c_h"><span>福建</span></td>
+                          </tr>
+                          <tr>
+                            <th>G</th>
+                            <td class="c_h"><span>广东</span><span>广西</span><span>贵州</span><span>甘肃</span></td>
+                          </tr>
+                          <tr>
+                            <th>H</th>
+                            <td class="c_h"><span>河北</span><span>河南</span><span>黑龙江</span><span>海南</span><span>湖北</span><span>湖南</span></td>
+                          </tr>
+                          <tr>
+                            <th>J</th>
+                            <td class="c_h"><span>江苏</span><span>吉林</span><span>江西</span></td>
+                          </tr>
+                          <tr>
+                            <th>L</th>
+                            <td class="c_h"><span>辽宁</span></td>
+                          </tr>
+                          <tr>
+                            <th>N</th>
+                            <td class="c_h"><span>内蒙古</span><span>宁夏</span></td>
+                          </tr>
+                          <tr>
+                            <th>Q</th>
+                            <td class="c_h"><span>青海</span></td>
+                          </tr>
+                          <tr>
+                            <th>S</th>
+                            <td class="c_h"><span>上海</span><span>山东</span><span>山西</span><span class="c_check">四川</span><span>陕西</span></td>
+                          </tr>
+                          <tr>
+                            <th>T</th>
+                            <td class="c_h"><span>台湾</span><span>天津</span></td>
+                          </tr>
+                          <tr>
+                            <th>X</th>
+                            <td class="c_h"><span>西藏</span><span>香港</span><span>新疆</span></td>
+                          </tr>
+                          <tr>
+                            <th>Y</th>
+                            <td class="c_h"><span>云南</span></td>
+                          </tr>
+                          <tr>
+                            <th>Z</th>
+                            <td class="c_h"><span>浙江</span></td>
+                          </tr>
+                        </table>
+                    </div>
+                </div>
+            </span>
+        </span>
+        <!--End 所在收货地区 End-->
+        <span class="fr">
+        	<span class="fl">你好，请<a href="Login.html">{{name}}</a>&nbsp; <a href="Regist.html" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<a href="#">我的订单</a>&nbsp;|</span>
+        	<span class="ss">
+            	<div class="ss_list">
+                	<a href="#">收藏夹</a>
+                    <div class="ss_list_bg">
+                    	<div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                        	<ul>
+                            	<li><a href="#">我的收藏夹</a></li>
+                                <li><a href="#">我的收藏夹</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ss_list">
+                	<a href="#">客户服务</a>
+                    <div class="ss_list_bg">
+                    	<div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                        	<ul>
+                            	<li><a href="#">客户服务</a></li>
+                                <li><a href="#">客户服务</a></li>
+                                <li><a href="#">客户服务</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ss_list">
+                	<a href="#">网站导航</a>
+                    <div class="ss_list_bg">
+                    	<div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                        	<ul>
+                            	<li><a href="#">网站导航</a></li>
+                                <li><a href="#">网站导航</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <span class="fl">|&nbsp;关注我们：</span>
+            <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
+            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="../assets/images//s_tel.png" align="absmiddle" /></a></span>
+        </span>
+      </div>
+    </div>
   <div class="top">
     <div class="logo"><a href="Index.html"><img src="../assets/images/logo.png" /></a></div>
     <div class="search">
@@ -511,301 +635,6 @@
 
       </div>
     </div>
-    <!--End 进口 生鲜 End-->
-
-<!--    &lt;!&ndash; Begin 广告 Begin &ndash;&gt;-->
-<!--    <div class="content mar_20">-->
-<!--      <img width="1200" height="110" src="../assets/images/mban_1.jpg">-->
-<!--    </div>-->
-<!--    &lt;!&ndash; End 广告 End &ndash;&gt;-->
-
-<!--    &lt;!&ndash;Begin 食品饮料 Begin&ndash;&gt;-->
-<!--    <div class="i_t mar_10">-->
-<!--      <span class="floor_num">2F</span>-->
-<!--      <span class="fl">食品饮料</span>-->
-<!--      <span class="i_mores fr"><a href="#">咖啡</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">休闲零食</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">饼干糕点</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">冲饮谷物</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">营养保健</a></span>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-
-<!--      <div class="fresh_mid">-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">莫斯利安酸奶</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>96.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/food_1.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">莫斯利安酸奶</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>96.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/food_2.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">莫斯利安酸奶</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>96.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/food_3.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">莫斯利安酸奶</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>96.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/food_4.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">莫斯利安酸奶</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>96.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/food_5.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">莫斯利安酸奶</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>96.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/food_6.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;End 食品饮料 End&ndash;&gt;-->
-
-<!--    &lt;!&ndash; Begin 广告 Begin &ndash;&gt;-->
-<!--    <div class="content mar_20">-->
-<!--      <img width="1200" height="110" src="../assets/images/mban_1.jpg">-->
-<!--    </div>-->
-<!--    &lt;!&ndash; End 广告 End &ndash;&gt;-->
-
-<!--    &lt;!&ndash;Begin 个人美妆 Begin&ndash;&gt;-->
-<!--    <div class="i_t mar_10">-->
-<!--      <span class="floor_num">3F</span>-->
-<!--      <span class="fl">个人美妆</span>-->
-<!--      <span class="i_mores fr"><a href="#">洗发护发</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">面膜</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">洗面奶</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">香水</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">沐浴露</a></span>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-<!--      <div class="fresh_mid">-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">美宝莲粉饼</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 16R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/make_1.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">美宝莲粉饼</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 16R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/make_2.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">美宝莲粉饼</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 16R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/make_3.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">美宝莲粉饼</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 16R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/make_4.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">美宝莲粉饼</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 16R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/make_5.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">美宝莲粉饼</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 16R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/make_6.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;End 个人美妆 End&ndash;&gt;-->
-<!--    <div class="content mar_20">-->
-<!--      <img src="../assets/images/mban_1.jpg" width="1200" height="110" />-->
-<!--    </div>-->
-<!--    &lt;!&ndash;Begin 母婴玩具 Begin&ndash;&gt;-->
-<!--    <div class="i_t mar_10">-->
-<!--      <span class="floor_num">4F</span>-->
-<!--      <span class="fl">母婴玩具</span>-->
-<!--      <span class="i_mores fr"><a href="#">营养品</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">孕妈背带裤</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">儿童玩具</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">婴儿床</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">喂奶器</a></span>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-<!--      <div class="fresh_mid">-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">儿童玩具  变形金刚</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 20R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/baby_1.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">儿童玩具  变形金刚</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 20R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/baby_2.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">儿童玩具  变形金刚</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 20R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/baby_3.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">儿童玩具  变形金刚</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 20R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/baby_4.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">儿童玩具  变形金刚</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 20R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/baby_5.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">儿童玩具  变形金刚</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>260.00</span></font> &nbsp; 20R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/baby_6.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;End 母婴玩具 End&ndash;&gt;-->
-<!--    &lt;!&ndash;Begin 家居生活 Begin&ndash;&gt;-->
-<!--    <div class="i_t mar_10">-->
-<!--      <span class="floor_num">5F</span>-->
-<!--      <span class="fl">家居生活</span>-->
-<!--      <span class="i_mores fr"><a href="#">床上用品</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">家纺布艺</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">餐具</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">沙发</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">汽车用品</a></span>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-<!--      <div class="fresh_mid">-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">品质蓝色沙发</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 50R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/home_1.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">品质蓝色沙发</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 50R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/home_2.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">品质蓝色沙发</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 50R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/home_3.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">品质蓝色沙发</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 50R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/home_4.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">品质蓝色沙发</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 50R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/home_5.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">品质蓝色沙发</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 50R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/home_6.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;End 家居生活 End&ndash;&gt;-->
-<!--    &lt;!&ndash;Begin 数码家电 Begin&ndash;&gt;-->
-<!--    <div class="i_t mar_10">-->
-<!--      <span class="floor_num">6F</span>-->
-<!--      <span class="fl">数码家电</span>-->
-<!--      <span class="i_mores fr"><a href="#">手机</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">苹果</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">华为手机</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">洗衣机</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">数码配件</a></span>-->
-<!--    </div>-->
-<!--    <div class="content">-->
-<!--      <div class="fresh_mid">-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">乐视高清电视</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/tel_1.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">乐视高清电视</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/tel_2.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">乐视高清电视</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/tel_3.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">乐视高清电视</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/tel_4.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">乐视高清电视</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/tel_5.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            <div class="name"><a href="#">乐视高清电视</a></div>-->
-<!--            <div class="price">-->
-<!--              <font>￥<span>2160.00</span></font> &nbsp; 25R-->
-<!--            </div>-->
-<!--            <div class="img"><a href="#"><img src="../assets/images/tel_6.jpg" width="185" height="155" /></a></div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-    <!--End 数码家电 End-->
-    <!--Begin 猜你喜欢 Begin-->
     <div class="i_t mar_10">
       <span class="fl">猜你喜欢</span>
     </div>
@@ -998,10 +827,10 @@
             return {
                 cate:22,
                 floor:[],
+                name:"",
             }
         },
         mounted () {
-
             axios
                 .get('http://localhost/blog/public/login/category')
                 .then(response => (this.cate = response.data))
@@ -1015,6 +844,8 @@
                 .catch(function (error) { // 请求失败处理
                     console.log(error);
                 });
+                 this.name=localStorage.getItem('name');
+                console.log(name);
         }
     }
 </script>
