@@ -79,8 +79,13 @@
         </span>
         <!--End 所在收货地区 End-->
         <span class="fr">
-        	<span class="fl">你好，请<a href="Login.html">{{name}}</a>&nbsp; <a href="Regist.html" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<a href="#">我的订单</a>&nbsp;|</span>
-        	<span class="ss">
+          <span class="fl" v-if="name==null">你好,请<router-link  to="/Login">登录</router-link><a href=" " style="color:#ff4e00;">免费注册</a>&nbsp;&nbsp;</span>
+        	<span class="fl">
+
+            	<div class="ss_list">{{name}}
+                <router-link  to="">退出</router-link>
+                &nbsp;<router-link  to="/Member_User">个人中心</router-link>
+                </div>
             	<div class="ss_list">
                 	<a href="#">收藏夹</a>
                     <div class="ss_list_bg">
@@ -93,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="ss_list">
                 	<a href="#">客户服务</a>
                     <div class="ss_list_bg">
@@ -553,81 +559,13 @@
         <div class="fresh_mid">
           <ul>
             <li v-for="name in value">
-              <div class="name"><a href="#">{{name}}</a></div>
+              <div class="name"><a href="#">{{name[0]}}</a></div>
               <div class="price">
                 <font>￥<span>198.00</span></font> &nbsp; 26R
               </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_2.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_3.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_4.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_6.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
-              <div class="price">
-                <font>￥<span>198.00</span></font> &nbsp; 26R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_5.jpg" width="185" height="155" /></a></div>
+              <router-link  :to="{path:'/Product',query:{goods_id:name[1]}}">
+              <div class="img"><a href="#"><img src="../assets/images/fre_1.jpg" width="185" height="155" /></a></div></router-link>
+
             </li>
 
           </ul>
@@ -826,8 +764,8 @@
         data () {
             return {
                 cate:22,
-                floor:[],
-                name:"",
+                floor:'',
+                name:'',
             }
         },
         mounted () {
