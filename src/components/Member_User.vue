@@ -375,7 +375,7 @@
             }
         },
         mounted () {
-            axios.post('http://localhost/blog/public/api/auth/me',{
+            axios.post('http://localhost/Laravel/public/api/auth/me',{
                 token:localStorage.getItem("token")
             })
                 .then(res=>{

@@ -79,7 +79,7 @@
                 if ((!this.username)||(!this.password)){
                     alert("账号密码必填")
                 };
-                axios.post('http://localhost/blog/public/api/auth/login',{
+                axios.post('http://localhost/Laravel/public/api/auth/login',{
                     name:this.username,
                     password:this.password
                 })

@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 Vue.prototype.$ajax=axios
 Vue.config.productionTip = false
-Vue.prototype.url="http://localhost/blog/public/api"
+Vue.prototype.url="http://localhost/Laravel/public/api"
 
 /* eslint-disable no-new */
 new Vue({

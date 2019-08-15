@@ -778,14 +778,14 @@
         },
         mounted () {
             axios
-                .get('http://localhost/blog/public/api/goods/category')
+                .get('http://localhost/Laravel/public/api/goods/category')
                 .then(response => (this.cate = response.data))
                 .catch(function (error) { // 请求失败处理
                     console.log(error);
                 });
 
             axios
-                .get('http://localhost/blog/public/api/goods/floor')
+                .get('http://localhost/Laravel/public/api/goods/floor')
                 .then(response => (this.floor= response.data))
                 .catch(function (error) { // 请求失败处理
                     console.log(error);

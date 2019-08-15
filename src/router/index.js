@@ -8,6 +8,7 @@ import Product from '@/components/Product'
 import Buycart from '@/components/Buycart'
 import Member_Address from '@/components/Member_Address'
 import Buycart_Two from '@/components/Buycart_Two'
+import Buycart_Three from '@/components/Buycart_Three'
 Vue.use(Router)
 
 export default new Router({
@@ -51,6 +52,11 @@ export default new Router({
       path: '/Buycart_Two',
       name: 'Buycart_Two',
       component: Buycart_Two
+    },
+    {
+      path: '/Buycart_Three',
+      name: 'Buycart_Three',
+      component: Buycart_Three
     }
   ]
 })

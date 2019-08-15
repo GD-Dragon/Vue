@@ -655,7 +655,7 @@
                 .then(res => {
                     this.cart = res.data
                     var token=localStorage.getItem("token")
-                    location.href="http://localhost/blog/public/api/auth/index?token="+token+"&id="+res.data
+                    location.href="http://localhost/Laravel/public/api/auth/index?token="+token+"&id="+res.data
                 });
 
             axios.post(this.url+'/auth/cart_two1', {
