@@ -83,7 +83,7 @@
         	<span class="fl">
 
             	<div class="ss_list">{{name}}
-                <router-link  to="">退出</router-link>
+                <a v-on:click="loginout">退出</a>
                 &nbsp;<router-link  to="/Member_User">个人中心</router-link>
                 </div>
             	<div class="ss_list">
@@ -768,16 +768,24 @@
                 name:'',
             }
         },
+        methods:{
+            loginout(){
+                localStorage.clear();
+                if(!localStorage.getItem("access_token")){
+                this.$router.push({name:'login'});
+                }
+            }
+        },
         mounted () {
             axios
-                .get('http://localhost/blog/public/login/category')
+                .get('http://localhost/blog/public/api/goods/category')
                 .then(response => (this.cate = response.data))
                 .catch(function (error) { // 请求失败处理
                     console.log(error);
                 });
 
             axios
-                .get('http://localhost/blog/public/login/floor')
+                .get('http://localhost/blog/public/api/goods/floor')
                 .then(response => (this.floor= response.data))
                 .catch(function (error) { // 请求失败处理
                     console.log(error);

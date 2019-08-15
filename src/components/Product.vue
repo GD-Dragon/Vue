@@ -1,5 +1,136 @@
 <template>
   <div>
+    <div class="soubg">
+      <div class="sou">
+        <!--Begin 所在收货地区 Begin-->
+        <span class="s_city_b">
+        	<span class="fl">送货至：</span>
+            <span class="s_city">
+            	<span>四川</span>
+                <div class="s_city_bg">
+                	<div class="s_city_t"></div>
+                    <div class="s_city_c">
+                    	<h2>请选择所在的收货地区</h2>
+                        <table border="0" class="c_tab" style="width:235px; margin-top:10px;" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th>A</th>
+                            <td class="c_h"><span>安徽</span><span>澳门</span></td>
+                          </tr>
+                          <tr>
+                            <th>B</th>
+                            <td class="c_h"><span>北京</span></td>
+                          </tr>
+                          <tr>
+                            <th>C</th>
+                            <td class="c_h"><span>重庆</span></td>
+                          </tr>
+                          <tr>
+                            <th>F</th>
+                            <td class="c_h"><span>福建</span></td>
+                          </tr>
+                          <tr>
+                            <th>G</th>
+                            <td class="c_h"><span>广东</span><span>广西</span><span>贵州</span><span>甘肃</span></td>
+                          </tr>
+                          <tr>
+                            <th>H</th>
+                            <td class="c_h"><span>河北</span><span>河南</span><span>黑龙江</span><span>海南</span><span>湖北</span><span>湖南</span></td>
+                          </tr>
+                          <tr>
+                            <th>J</th>
+                            <td class="c_h"><span>江苏</span><span>吉林</span><span>江西</span></td>
+                          </tr>
+                          <tr>
+                            <th>L</th>
+                            <td class="c_h"><span>辽宁</span></td>
+                          </tr>
+                          <tr>
+                            <th>N</th>
+                            <td class="c_h"><span>内蒙古</span><span>宁夏</span></td>
+                          </tr>
+                          <tr>
+                            <th>Q</th>
+                            <td class="c_h"><span>青海</span></td>
+                          </tr>
+                          <tr>
+                            <th>S</th>
+                            <td class="c_h"><span>上海</span><span>山东</span><span>山西</span><span class="c_check">四川</span><span>陕西</span></td>
+                          </tr>
+                          <tr>
+                            <th>T</th>
+                            <td class="c_h"><span>台湾</span><span>天津</span></td>
+                          </tr>
+                          <tr>
+                            <th>X</th>
+                            <td class="c_h"><span>西藏</span><span>香港</span><span>新疆</span></td>
+                          </tr>
+                          <tr>
+                            <th>Y</th>
+                            <td class="c_h"><span>云南</span></td>
+                          </tr>
+                          <tr>
+                            <th>Z</th>
+                            <td class="c_h"><span>浙江</span></td>
+                          </tr>
+                        </table>
+                    </div>
+                </div>
+            </span>
+        </span>
+        <!--End 所在收货地区 End-->
+        <span class="fr">
+          <span class="fl" v-if="name==null">你好,请<router-link  to="/Login">登录</router-link><a href=" " style="color:#ff4e00;">免费注册</a>&nbsp;&nbsp;</span>
+        	<span class="fl">
+
+            	<div class="ss_list">{{name}}
+                <router-link  to="">退出</router-link>
+                &nbsp;<router-link  to="/Member_User">个人中心</router-link>
+                </div>
+            	<div class="ss_list">
+                	<a href="#">收藏夹</a>
+                    <div class="ss_list_bg">
+                    	<div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                        	<ul>
+                            	<li><a href="#">我的收藏夹</a></li>
+                                <li><a href="#">我的收藏夹</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ss_list">
+                	<a href="#">客户服务</a>
+                    <div class="ss_list_bg">
+                    	<div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                        	<ul>
+                            	<li><a href="#">客户服务</a></li>
+                                <li><a href="#">客户服务</a></li>
+                                <li><a href="#">客户服务</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ss_list">
+                	<a href="#">网站导航</a>
+                    <div class="ss_list_bg">
+                    	<div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                        	<ul>
+                            	<li><a href="#">网站导航</a></li>
+                                <li><a href="#">网站导航</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <span class="fl">|&nbsp;关注我们：</span>
+            <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
+            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="../assets/images//s_tel.png" align="absmiddle" /></a></span>
+        </span>
+      </div>
+    </div>
   <div class="top">
     <div class="logo"><a href="Index.html"><img src="../assets/images/logo.png" /></a></div>
     <div class="search">
@@ -34,7 +165,7 @@
           </li>
         </ul>
         <div class="price_sum">共计&nbsp; <font color="#ff4e00">￥</font><span>1058</span></div>
-        <div class="price_a"><a href="#">去购物车结算</a></div>
+        <div class="price_a"><router-link to="/Buycart">去购物车结算</router-link></div>
         <!--End 购物车已登录 End-->
       </div>
     </div>
@@ -332,11 +463,11 @@
       <div class="pro_des">
         <div>
         <div class="des_name">
-          <p>{{res.name}}</p>
+          <p>{{res.g_name}}</p>
           “开业巨惠，北京专柜直供”，不光低价，“真”才靠谱！
         </div>
         <div class="des_price">
-          本店价格：<b>￥589</b><br />
+          本店价格：<b>{{price}}</b><br />
           消费积分：<span>28R</span>
         </div>
         <div class="des_choice" v-for="(value,key) in res.data">
@@ -363,11 +494,11 @@
         </div>
         <div class="des_join">
           <div class="j_nums">
-            <input type="text" value="1" name="" class="n_ipt" />
+            <input type="text" value="1" name="" id="num" class="n_ipt" />
             <input type="button" value="" onclick="addUpdate(jq(this));" class="n_btn_1" />
             <input type="button" value="" onclick="jianUpdate(jq(this));" class="n_btn_2" />
           </div>
-          <span class="fl"><a onclick="ShowDiv_1('MyDiv1','fade1')"><img src="../assets/images/j_car.png" /></a></span>
+          <span class="fl" v-on:click="addcart"><a><img src="../assets/images/j_car.png" /></a></span>
         </div>
       </div>
 
@@ -765,60 +896,80 @@
 <script>
     export default {
 
-
-        name: "Goods",
         data(){
             return{
+                name:'',
                 id:'',
                 res:[],
+                price:'',
                 isajax:1,
                 d_id:'',
-                name:''
+                ruku:[],
+
             }
         },
         methods:{
             radio:function () {
                 var _this=this
                 $.each(this.res.data,function (key,val) {
-                    if($("input[name='"+key+"']:checked").val()==undefined){
+                    if ($("input[name='"+key+"']:checked").val()==undefined){
                         _this.isajax=0
                         console.log("null")
                     }
                 })
-                if (this.isajax==1){
+                if (this.isajax==1) {
                     $.each(this.res.data,function (keys,value){
+                        console.log($("input[name='" + keys + "']:checked").val())
                         _this.d_id=_this.d_id +"-"+ $("input[name='"+keys+"']:checked").val()
                     })
-                    axios.post(this.url+'/product',{
+                    axios.post(this.url+'/product/product',{
                         d_id:_this.d_id,
-                        goods_id:_this.$route.query.goods_id
+                        goods_id:_this.$route.query.goods_id,
                     })
                         .then(response =>{
-                            console.log(response.data);
+                            console.log(response.data[0]);
+                            this.ruku=response.data[0];
+                            this.price=response.data[0].price;
                         })
                     _this.d_id=''
                 }
                 this.isajax=1
-                //console.log(_this.d_id)
+                // console.log(_this.d_id)
+            },
+            addcart:function () {
+                var num=document.getElementById('num').value
+                console.log(this.ruku);
+                axios.post(this.url+'/shopcart/shopcart',{
+                    num:num,
+                    pid:this.ruku.id,
+                    price:this.ruku.price,
+                    d_id:this.ruku.goods_attr_id,
+                    name:localStorage.getItem("name"),
+                    token:localStorage.getItem("token"),
+                })
+                    .then(res=>{
+                        console.log(res.data)
+                        if (res.data){
+                            alert("加入购物车成功");
+                            var num=document.getElementById('num').value=1
+                        }
+                    })
             }
         },
+
         mounted() {
-            //var _this=this
-            //this.id=this.$route.query.goods_id//获取商品ID
+            // var _this=this
+            // this.id=this.$route.query.goods_id//获取商品ID
             var goods_id=this.$route.query['goods_id']
             console.log(goods_id)
-            axios.post('http://localhost/blog/public/api/login/shop?goods_id='+goods_id)
+            axios.post('http://localhost/blog/public/api/product/shop?goods_id='+goods_id)
                 .then(res=>{
                     console.log(res.data)
                     this.res=res.data
                 })
-            // this.name=localStorage.getItem('name');
-            // console.log(name);
+            this.name=localStorage.getItem('name');
+            console.log(name);
         }
-
-
-
-
     }
 </script>
 
